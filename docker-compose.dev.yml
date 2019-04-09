@@ -1,0 +1,10 @@
+version: '2'
+services:
+  server:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data/webapps/example-two:/usr/share/webapps/example-two
+
+# docker-compose -f docker-compose.dev.yml up --build
