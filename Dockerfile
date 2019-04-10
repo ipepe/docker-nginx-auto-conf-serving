@@ -5,6 +5,7 @@ CMD ["/root/docker-entrypoint.sh"]
 
 RUN apt-get update
 RUN apt-get install -qq -y ruby cron nginx
+RUN rm /etc/nginx/sites-available/* /etc/nginx/sites-enabled/*
 
-COPY root_path /
+COPY src_fs /
 
