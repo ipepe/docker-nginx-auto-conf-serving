@@ -4,6 +4,7 @@ nginx -t
 
 service nginx start
 service cron start
+service ssh start
 
 ruby /root/runner.rb > /proc/1/fd/1 2>/proc/1/fd/2
 

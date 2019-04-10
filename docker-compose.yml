@@ -1,7 +1,7 @@
 version: '2'
 services:
-  server:
-    build: .
+  nginx-auto-conf:
+    image: ipepe/nginx-auto-conf-serving
     ports:
       - "8080:80"
       - "8022:22"
